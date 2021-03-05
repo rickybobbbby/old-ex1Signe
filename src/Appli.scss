@@ -1,0 +1,30 @@
+$width_signet: 300px;
+$margin_signet: 10px;
+
+#grille {
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  max-width: calc((#{$width_signet} + (#{$margin_signet} * 2)) * 5); // Pour maximume 5 items sur un ecran à la fois
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: start;
+
+  & > .signet {
+    width: $width_signet;
+    height: 330px;
+    flex: 0 0 auto;
+    margin: 10px;
+  }
+}
+
+#fab {
+  position: fixed;
+
+  bottom: 30px;
+  right: 30px;
+
+  background: #333333;
+}
